@@ -13,6 +13,21 @@ mixin intro()
                     h1.intro__slide-title Скидки до 70%
                     p.intro__slide-p К 8 марта на женскую одежду
                     a(href="#!" anim='ripple').intro__slide-btn.c-btn Купить 
-        .intro__slide-btns 
-            .intro__slide-next.swiper-button-next
-            .intro__slide-prev.swiper-button-prev
+        .intro__slide-btns
+            .container 
+                .intro__slide-prev.swiper-button-prev
+                .intro__slide-next.swiper-button-next
+
+mixin intro2()
+    .intro2 
+        .intro2__body.container 
+            a(href="#!").intro2-item 
+                .intro2-item-row
+                    p.intro2-item-name Для неё
+                    p.intro2-item-hash #наше_women 
+                img(src="images/menu-6.png", alt="") 
+            a(href="#!").intro2-item 
+                .intro2-item-row
+                    p.intro2-item-name Для него 
+                    p.intro2-item-hash #наше_man
+                img(src="images/menu-7.png", alt="") 
