@@ -374,7 +374,7 @@
     height: 100%;
     padding: 30px;
     z-index: 50;
-    overflow-y: scroll;
+    overflow-y: auto;
     transform: translateX(-100%);
     transition: 200ms ease-in-out;
     display: flex;

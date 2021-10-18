@@ -117,6 +117,7 @@
             justify-content: center;
             align-items: flex-start;
             column-gap: 30px;
+            height: 30px;
             @include media(992){
                 display: flex;
             }
