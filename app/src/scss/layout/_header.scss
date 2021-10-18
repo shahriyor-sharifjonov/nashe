@@ -348,11 +348,17 @@
     }
     &__logo {
         margin-left: 20px;
+        @include media(576){
+            margin-left: 10px;
+        }
     }
     &__right{
         display: flex;  
         justify-content: flex-end;
         align-items: center;
         column-gap: 25px;
+        @include media(576){
+            column-gap: 15px;
+        }
     }
 }

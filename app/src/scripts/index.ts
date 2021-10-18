@@ -4,6 +4,10 @@ const introSlider = new Swiper(".intro", {
     nextEl: ".intro__slide-next",
     prevEl: ".intro__slide-prev",
   },
+  pagination: {
+    el: ".intro__slide-navigation",
+    clickable: true,
+  }
 });
 
 [].map.call(document.querySelectorAll('[anim="ripple"]'), el=> {
