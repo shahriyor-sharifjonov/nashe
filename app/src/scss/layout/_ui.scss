@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+    font-family: 'Rubik', sans-serif;
+
+    &:focus,
+    &:active {
+        outline: none;
+    }
+}
+
+button {
+    font-family: inherit;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+input {
+    font-family: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+[anim="ripple"] {
+    position: relative;
+    overflow: hidden;
+
+    &:before {
+        content: '';
+        position: absolute;
+        display: block;
+        background: var(--ripple-background, white);
+        border-radius: 50%;
+        pointer-events: none;
+        top: calc(var(--y) * 1px);
+        left: calc(var(--x) * 1px);
+        width: calc(var(--d) * 1px);
+        height: calc(var(--d) * 1px);
+        opacity: calc(var(--o, 1) * var(--ripple-opacity, 0.3));
+        transition: calc(var(--t, 0) * var(--ripple-duration, 600ms)) var(--ripple-easing, linear);
+        transform: translate(-50%, -50%) scale(var(--s, 1));
+        transform-origin: center;
+    }
+}
+
+.c-btn {
+    background: #BA6C55;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    border-radius: 55px;
+    padding: 17px 70px;
+    transition: background 400ms ease-in-out;
+
+    &:hover {
+        background: lighten(#BA6C55, 5%);
+        color: #fff;
+    }
+
+}
