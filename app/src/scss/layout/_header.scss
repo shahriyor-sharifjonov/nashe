@@ -241,6 +241,7 @@
             opacity: 0;
             visibility: hidden;
             transition:  200ms ease-in-out;
+            box-shadow: 0 0px 10px #00000030;
         }
 
         &:hover{
@@ -264,6 +265,7 @@
         transition:  200ms ease-in-out;
         padding: 40px 0;
         transform: translateY(10px);
+        box-shadow: 0 5px 5px #00000010;
 
         & .container {
             display: flex;
