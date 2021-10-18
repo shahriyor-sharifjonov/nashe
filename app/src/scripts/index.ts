@@ -14,3 +14,25 @@ const introSlider = new Swiper(".intro", {
         el.style.cssText = `--t: 1; --o: 0; --d: ${d}; --x:${e.clientX - r.left}; --y:${e.clientY - r.top};`
     })
 })
+
+// Header Menu
+const headerButton: HTMLButtonElement =
+  document.querySelector(".header__button");
+const headerMenu: HTMLUListElement = document.querySelector(".header__menu");
+let menuOpened = false;
+const menuToggle = () => {
+  menuOpened = !menuOpened;
+  headerButton.classList.toggle("open");
+  headerMenu.classList.toggle("open");
+};
+
+headerButton.onclick = menuToggle;
+
+window.onclick = (e: MouseEvent) => {
+  if (
+    menuOpened &&
+    !e.composedPath().includes(headerButton) &&
+    !e.composedPath().includes(headerMenu)
+  )
+    menuToggle();
+};

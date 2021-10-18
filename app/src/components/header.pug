@@ -184,6 +184,25 @@ mixin header1()
                                     a(href="#!").header__content-item 
                                         p.header__content-item-name Для него 
                                         img(src="images/menu-7.png", alt="") 
+    header.header.header_transparent_mob    
+        +offer 
+        .header__nav.header-mob 
+            .container
+                .header-mob__left
+                    button.header__button 
+                        span.header__button-line    
+                    a(href="index.html#!").header-mob__logo 
+                        img(src="images/logo-2.png", alt="")
+                .header-mob__right 
+                    button(type='button').header__search-req.header__right-btn
+                        img(src="images/search.svg", alt="")
+                    a(href="#!").header__right-btn
+                        img(src="images/user.svg", alt="") 
+                    a(href="#!" data-value="3").header__right-btn.header__right-btn_value
+                        img(src="images/heart.svg", alt="") 
+                    a(href="#!" data-value="0").header__right-btn.header__right-btn_value.zero
+                        img(src="images/cart.svg", alt="") 
+
 
 
 

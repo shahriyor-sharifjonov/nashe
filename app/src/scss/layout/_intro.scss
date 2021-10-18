@@ -89,6 +89,10 @@
         align-items: flex-start;
     }
     &-item{
+        max-width: calc(50% - 10px);
+        &>img{ 
+            max-width: 100%;
+        }
         &-row {
             display: flex;
             justify-content: space-between;

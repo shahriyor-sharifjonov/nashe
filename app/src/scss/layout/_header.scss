@@ -8,12 +8,72 @@
     z-index: 30;
 
     &_transparent {
+        @include media(1200){
+            display: none;
+        }
+
+        &_mob{
+            display: none;
+            @include media(1200){
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+            }
+        }
 
         & .header__nav {
             background: linear-gradient(180deg, rgba(30, 0, 7, 0.6) 0%, rgba(22, 0, 5, 0) 100%);
         }
 
     }
+
+    &__button {
+        width: 30px;
+        height: 30px;
+        position: relative;
+        border: none;
+        outline: none;
+        background: none;
+        display: none;
+        @include media(1200) {
+          display: block;
+        }
+        &.open {
+          .header__button-line,
+          &::before {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(135deg);
+          }
+          &::after {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-135deg);
+          }
+        }
+        &::before,
+        &::after,
+        &-line {
+          transition: 0.5s;
+          position: absolute;
+          content: "";
+          left: 0;
+          width: 100%;
+          height: 2px;
+          background: white;
+        }
+        &::before {
+          top: 20%;
+        }
+        &::after {
+          bottom: 20%;
+        }
+        &-line {
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
 
     &__nav {
 
@@ -255,4 +315,44 @@
 
     }
 
+}
+
+
+.header-mob{
+    width: 100%;
+    position: relative;
+    height: 62px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    &::before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;  
+      width: 100%;
+      height: 100px;
+      z-index: -1;
+      background: linear-gradient(180deg, rgba(30, 0, 7, 0.6) 0%, rgba(22, 0, 5, 0) 100%);
+    }
+    &>.container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__left{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    &__logo {
+        margin-left: 20px;
+    }
+    &__right{
+        display: flex;  
+        justify-content: flex-end;
+        align-items: center;
+        column-gap: 25px;
+    }
 }
