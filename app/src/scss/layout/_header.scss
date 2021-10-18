@@ -518,9 +518,16 @@
     }
     .header__link {
         color: #5D3B3A;
+        &::before{
+            box-shadow: 0 0px 10px #00000030;
+        }
     }
+    .header__content{
+        box-shadow: 0 5px 5px #00000010;
+    }   
 }
 .header_white_mob {
+    display: none;
     @include media(1200){
         display: flex;
         flex-direction: column;
