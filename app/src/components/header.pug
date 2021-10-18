@@ -38,10 +38,10 @@ mixin header1()
                                         a(href="#!").header__content-link Джемперы
                                         a(href="#!").header__content-link Водолазки
                                         a(href="#!")
-                            .header__menu-item-li a(
-                            .header__menu-item-li a(href="#!").header__content-link Футболки
-                            .header__menu-item-li a(href="#!").header__content-link Брюки
-                            .header__menu-item-li a(href="#!").header__content-link Легинсы и лосины
+                            a(href="#!").header__menu-item-li a(
+                            a(href="#!").header__menu-item-li a(href="#!").header__content-link Футболки
+                            a(href="#!").header__menu-item-li a(href="#!").header__content-link Брюки
+                            a(href="#!").header__menu-item-li a(href="#!").header__content-link Легинсы и лосины
                                     .header__content-col 
                                         a(href="#!").header__content-link Легинсы и лосины
                                         a(href="#!").header__content-link Шорты
@@ -119,10 +119,10 @@ mixin header1()
                                         a(href="#!").header__content-link Шарфы
                                         a(href="#!").header__content-link Шорты
                                         a(href="#!")
-                            .header__menu-item-li a(
-                            .header__menu-item-li a(href="#!").header__content-link Сарафаны
-                            .header__menu-item-li a(href="#!").header__content-link Трусы
-                            .header__menu-item-li img(src="images/menu-4.png", alt="")
+                            a(href="#!").header__menu-item-li a(
+                            a(href="#!").header__menu-item-li a(href="#!").header__content-link Сарафаны
+                            a(href="#!").header__menu-item-li a(href="#!").header__content-link Трусы
+                            a(href="#!").header__menu-item-li img(src="images/menu-4.png", alt="")
                         li.header__li 
                             a(href="#!").header__link Носки и колготки 
                             .header__content    
@@ -203,192 +203,200 @@ mixin header1()
                     a(href="#!" data-value="0").header__right-btn.header__right-btn_value.zero
                         img(src="images/cart.svg", alt="") 
             .header__menu 
-                a(href="index.html#!").header__menu-logo    
-                    img(src="images/logo-sm.svg", alt="") 
-                .header__top    
+                .header__menu-top
+                    a(href="index.html#!").header__menu-logo    
+                        img(src="images/logo-sm.svg", alt="") 
                     .header__menu-item 
-                        button(type='button').header__menu-item-btn
+                        button(type='button' onclick="addActive(this)").header__menu-item-btn 
                             | Женщинам
                             img(src="images/right.svg", alt="")
                         .header__menu-item-content 
                             .header__menu-item-name Распродажа
                                 img(src="images/per.svg", alt="")
-                            .header__menu-item-li Новинки
-                            .header__menu-item-li Брюки
-                            .header__menu-item-li Водолазки
-                            .header__menu-item-li Джемперы
-                            .header__menu-item-li Жилетки
-                            .header__menu-item-li Костюмы
-                            .header__menu-item-li Легинсы и лосины
-                            .header__menu-item-li Майки
-                            .header__menu-item-li Пижамы
-                            .header__menu-item-li Сорочки
-                            .header__menu-item-li Футболки
-                            .header__menu-item-li Халаты
-                            .header__menu-item-li Шарфы
-                            .header__menu-item-li Шорты
-                            .header__menu-item-li Юбки
-                            .header__menu-item-li Платья  
-                            .header__menu-item-li Сарафаны
-                            .header__menu-item-li Трусы
-                            .header__menu-item-li Новорождённым
-                    .header__menu-item 
-                        button(type='button').header__menu-item-btn
+                            a(href="#!").header__menu-item-li Новинки
+                            a(href="#!").header__menu-item-li Брюки
+                            a(href="#!").header__menu-item-li Водолазки
+                            a(href="#!").header__menu-item-li Джемперы
+                            a(href="#!").header__menu-item-li Жилетки
+                            a(href="#!").header__menu-item-li Костюмы
+                            a(href="#!").header__menu-item-li Легинсы и лосины
+                            a(href="#!").header__menu-item-li Майки
+                            a(href="#!").header__menu-item-li Пижамы
+                            a(href="#!").header__menu-item-li Сорочки
+                            a(href="#!").header__menu-item-li Футболки
+                            a(href="#!").header__menu-item-li Халаты
+                            a(href="#!").header__menu-item-li Шарфы
+                            a(href="#!").header__menu-item-li Шорты
+                            a(href="#!").header__menu-item-li Юбки
+                            a(href="#!").header__menu-item-li Платья  
+                            a(href="#!").header__menu-item-li Сарафаны
+                            a(href="#!").header__menu-item-li Трусы
+                            a(href="#!").header__menu-item-li Новорождённым
+                    .header__menu-item
+                        button(type='button' onclick="addActive(this)").header__menu-item-btn 
                             | Мужчинам
                             img(src="images/right.svg", alt="")
                         .header__menu-item-content 
                             .header__menu-item-name Распродажа
                                 img(src="images/per.svg", alt="")
-                            .header__menu-item-li Новинки
-                            .header__menu-item-li Брюки
-                            .header__menu-item-li Водолазки
-                            .header__menu-item-li Джемперы
-                            .header__menu-item-li Жилетки
-                            .header__menu-item-li Костюмы
-                            .header__menu-item-li Легинсы и лосины
-                            .header__menu-item-li Майки
-                            .header__menu-item-li Пижамы
-                            .header__menu-item-li Сорочки
-                            .header__menu-item-li Футболки
-                            .header__menu-item-li Халаты
-                            .header__menu-item-li Шарфы
-                            .header__menu-item-li Шорты
-                            .header__menu-item-li Юбки
-                            .header__menu-item-li Платья  
-                            .header__menu-item-li Сарафаны
-                            .header__menu-item-li Трусы
-                            .header__menu-item-li Новорождённым
+                            a(href="#!").header__menu-item-li Новинки
+                            a(href="#!").header__menu-item-li Брюки
+                            a(href="#!").header__menu-item-li Водолазки
+                            a(href="#!").header__menu-item-li Джемперы
+                            a(href="#!").header__menu-item-li Жилетки
+                            a(href="#!").header__menu-item-li Костюмы
+                            a(href="#!").header__menu-item-li Легинсы и лосины
+                            a(href="#!").header__menu-item-li Майки
+                            a(href="#!").header__menu-item-li Пижамы
+                            a(href="#!").header__menu-item-li Сорочки
+                            a(href="#!").header__menu-item-li Футболки
+                            a(href="#!").header__menu-item-li Халаты
+                            a(href="#!").header__menu-item-li Шарфы
+                            a(href="#!").header__menu-item-li Шорты
+                            a(href="#!").header__menu-item-li Юбки
+                            a(href="#!").header__menu-item-li Платья  
+                            a(href="#!").header__menu-item-li Сарафаны
+                            a(href="#!").header__menu-item-li Трусы
+                            a(href="#!").header__menu-item-li Новорождённым
                     .header__menu-item 
-                        button(type='button').header__menu-item-btn
+                        button(type='button' onclick="addActive(this)").header__menu-item-btn
                             | Мальчикам
                             img(src="images/right.svg", alt="")
                         .header__menu-item-content 
                             .header__menu-item-name Распродажа
                                 img(src="images/per.svg", alt="")
-                            .header__menu-item-li Новинки
-                            .header__menu-item-li Брюки
-                            .header__menu-item-li Водолазки
-                            .header__menu-item-li Джемперы
-                            .header__menu-item-li Жилетки
-                            .header__menu-item-li Костюмы
-                            .header__menu-item-li Легинсы и лосины
-                            .header__menu-item-li Майки
-                            .header__menu-item-li Пижамы
-                            .header__menu-item-li Сорочки
-                            .header__menu-item-li Футболки
-                            .header__menu-item-li Халаты
-                            .header__menu-item-li Шарфы
-                            .header__menu-item-li Шорты
-                            .header__menu-item-li Юбки
-                            .header__menu-item-li Платья  
-                            .header__menu-item-li Сарафаны
-                            .header__menu-item-li Трусы
-                            .header__menu-item-li Новорождённым
+                            a(href="#!").header__menu-item-li Новинки
+                            a(href="#!").header__menu-item-li Брюки
+                            a(href="#!").header__menu-item-li Водолазки
+                            a(href="#!").header__menu-item-li Джемперы
+                            a(href="#!").header__menu-item-li Жилетки
+                            a(href="#!").header__menu-item-li Костюмы
+                            a(href="#!").header__menu-item-li Легинсы и лосины
+                            a(href="#!").header__menu-item-li Майки
+                            a(href="#!").header__menu-item-li Пижамы
+                            a(href="#!").header__menu-item-li Сорочки
+                            a(href="#!").header__menu-item-li Футболки
+                            a(href="#!").header__menu-item-li Халаты
+                            a(href="#!").header__menu-item-li Шарфы
+                            a(href="#!").header__menu-item-li Шорты
+                            a(href="#!").header__menu-item-li Юбки
+                            a(href="#!").header__menu-item-li Платья  
+                            a(href="#!").header__menu-item-li Сарафаны
+                            a(href="#!").header__menu-item-li Трусы
+                            a(href="#!").header__menu-item-li Новорождённым
                     .header__menu-item 
-                        button(type='button').header__menu-item-btn
+                        button(type='button' onclick="addActive(this)").header__menu-item-btn
                             | Девочкам
                             img(src="images/right.svg", alt="")
                         .header__menu-item-content 
                             .header__menu-item-name Распродажа
                                 img(src="images/per.svg", alt="")
-                            .header__menu-item-li Новинки
-                            .header__menu-item-li Брюки
-                            .header__menu-item-li Водолазки
-                            .header__menu-item-li Джемперы
-                            .header__menu-item-li Жилетки
-                            .header__menu-item-li Костюмы
-                            .header__menu-item-li Легинсы и лосины
-                            .header__menu-item-li Майки
-                            .header__menu-item-li Пижамы
-                            .header__menu-item-li Сорочки
-                            .header__menu-item-li Футболки
-                            .header__menu-item-li Халаты
-                            .header__menu-item-li Шарфы
-                            .header__menu-item-li Шорты
-                            .header__menu-item-li Юбки
-                            .header__menu-item-li Платья  
-                            .header__menu-item-li Сарафаны
-                            .header__menu-item-li Трусы
-                            .header__menu-item-li Новорождённым
+                            a(href="#!").header__menu-item-li Новинки
+                            a(href="#!").header__menu-item-li Брюки
+                            a(href="#!").header__menu-item-li Водолазки
+                            a(href="#!").header__menu-item-li Джемперы
+                            a(href="#!").header__menu-item-li Жилетки
+                            a(href="#!").header__menu-item-li Костюмы
+                            a(href="#!").header__menu-item-li Легинсы и лосины
+                            a(href="#!").header__menu-item-li Майки
+                            a(href="#!").header__menu-item-li Пижамы
+                            a(href="#!").header__menu-item-li Сорочки
+                            a(href="#!").header__menu-item-li Футболки
+                            a(href="#!").header__menu-item-li Халаты
+                            a(href="#!").header__menu-item-li Шарфы
+                            a(href="#!").header__menu-item-li Шорты
+                            a(href="#!").header__menu-item-li Юбки
+                            a(href="#!").header__menu-item-li Платья  
+                            a(href="#!").header__menu-item-li Сарафаны
+                            a(href="#!").header__menu-item-li Трусы
+                            a(href="#!").header__menu-item-li Новорождённым
                     .header__menu-item 
-                        button(type='button').header__menu-item-btn
+                        button(type='button' onclick="addActive(this)").header__menu-item-btn
                             | Носки и колготки
                             img(src="images/right.svg", alt="")
                         .header__menu-item-content 
                             .header__menu-item-name Распродажа
                                 img(src="images/per.svg", alt="")
-                            .header__menu-item-li Новинки
-                            .header__menu-item-li Брюки
-                            .header__menu-item-li Водолазки
-                            .header__menu-item-li Джемперы
-                            .header__menu-item-li Жилетки
-                            .header__menu-item-li Костюмы
-                            .header__menu-item-li Легинсы и лосины
-                            .header__menu-item-li Майки
-                            .header__menu-item-li Пижамы
-                            .header__menu-item-li Сорочки
-                            .header__menu-item-li Футболки
-                            .header__menu-item-li Халаты
-                            .header__menu-item-li Шарфы
-                            .header__menu-item-li Шорты
-                            .header__menu-item-li Юбки
-                            .header__menu-item-li Платья  
-                            .header__menu-item-li Сарафаны
-                            .header__menu-item-li Трусы
-                            .header__menu-item-li Новорождённым
+                            a(href="#!").header__menu-item-li Новинки
+                            a(href="#!").header__menu-item-li Брюки
+                            a(href="#!").header__menu-item-li Водолазки
+                            a(href="#!").header__menu-item-li Джемперы
+                            a(href="#!").header__menu-item-li Жилетки
+                            a(href="#!").header__menu-item-li Костюмы
+                            a(href="#!").header__menu-item-li Легинсы и лосины
+                            a(href="#!").header__menu-item-li Майки
+                            a(href="#!").header__menu-item-li Пижамы
+                            a(href="#!").header__menu-item-li Сорочки
+                            a(href="#!").header__menu-item-li Футболки
+                            a(href="#!").header__menu-item-li Халаты
+                            a(href="#!").header__menu-item-li Шарфы
+                            a(href="#!").header__menu-item-li Шорты
+                            a(href="#!").header__menu-item-li Юбки
+                            a(href="#!").header__menu-item-li Платья  
+                            a(href="#!").header__menu-item-li Сарафаны
+                            a(href="#!").header__menu-item-li Трусы
+                            a(href="#!").header__menu-item-li Новорождённым
                     .header__menu-item 
-                        button(type='button').header__menu-item-btn
+                        button(type='button' onclick="addActive(this)").header__menu-item-btn
                             | Для дома
                             img(src="images/right.svg", alt="")
                         .header__menu-item-content 
                             .header__menu-item-name Распродажа
                                 img(src="images/per.svg", alt="")
-                            .header__menu-item-li Новинки
-                            .header__menu-item-li Брюки
-                            .header__menu-item-li Водолазки
-                            .header__menu-item-li Джемперы
-                            .header__menu-item-li Жилетки
-                            .header__menu-item-li Костюмы
-                            .header__menu-item-li Легинсы и лосины
-                            .header__menu-item-li Майки
-                            .header__menu-item-li Пижамы
-                            .header__menu-item-li Сорочки
-                            .header__menu-item-li Футболки
-                            .header__menu-item-li Халаты
-                            .header__menu-item-li Шарфы
-                            .header__menu-item-li Шорты
-                            .header__menu-item-li Юбки
-                            .header__menu-item-li Платья  
-                            .header__menu-item-li Сарафаны
-                            .header__menu-item-li Трусы
-                            .header__menu-item-li Новорождённым
+                            a(href="#!").header__menu-item-li Новинки
+                            a(href="#!").header__menu-item-li Брюки
+                            a(href="#!").header__menu-item-li Водолазки
+                            a(href="#!").header__menu-item-li Джемперы
+                            a(href="#!").header__menu-item-li Жилетки
+                            a(href="#!").header__menu-item-li Костюмы
+                            a(href="#!").header__menu-item-li Легинсы и лосины
+                            a(href="#!").header__menu-item-li Майки
+                            a(href="#!").header__menu-item-li Пижамы
+                            a(href="#!").header__menu-item-li Сорочки
+                            a(href="#!").header__menu-item-li Футболки
+                            a(href="#!").header__menu-item-li Халаты
+                            a(href="#!").header__menu-item-li Шарфы
+                            a(href="#!").header__menu-item-li Шорты
+                            a(href="#!").header__menu-item-li Юбки
+                            a(href="#!").header__menu-item-li Платья  
+                            a(href="#!").header__menu-item-li Сарафаны
+                            a(href="#!").header__menu-item-li Трусы
+                            a(href="#!").header__menu-item-li Новорождённым
                     .header__menu-item 
-                        button(type='button').header__menu-item-btn
+                        button(type='button' onclick="addActive(this)").header__menu-item-btn
                             | Подарки
                             img(src="images/right.svg", alt="")
                         .header__menu-item-content 
                             .header__menu-item-name Распродажа
                                 img(src="images/per.svg", alt="")
-                            .header__menu-item-li Новинки
-                            .header__menu-item-li Брюки
-                            .header__menu-item-li Водолазки
-                            .header__menu-item-li Джемперы
-                            .header__menu-item-li Жилетки
-                            .header__menu-item-li Костюмы
-                            .header__menu-item-li Легинсы и лосины
-                            .header__menu-item-li Майки
-                            .header__menu-item-li Пижамы
-                            .header__menu-item-li Сорочки
-                            .header__menu-item-li Футболки
-                            .header__menu-item-li Халаты
-                            .header__menu-item-li Шарфы
-                            .header__menu-item-li Шорты
-                            .header__menu-item-li Юбки
-                            .header__menu-item-li Платья  
-                            .header__menu-item-li Сарафаны
-                            .header__menu-item-li Трусы
-                            .header__menu-item-li Новорождённым
-                .header__bot
+                            a(href="#!").header__menu-item-li Новинки
+                            a(href="#!").header__menu-item-li Брюки
+                            a(href="#!").header__menu-item-li Водолазки
+                            a(href="#!").header__menu-item-li Джемперы
+                            a(href="#!").header__menu-item-li Жилетки
+                            a(href="#!").header__menu-item-li Костюмы
+                            a(href="#!").header__menu-item-li Легинсы и лосины
+                            a(href="#!").header__menu-item-li Майки
+                            a(href="#!").header__menu-item-li Пижамы
+                            a(href="#!").header__menu-item-li Сорочки
+                            a(href="#!").header__menu-item-li Футболки
+                            a(href="#!").header__menu-item-li Халаты
+                            a(href="#!").header__menu-item-li Шарфы
+                            a(href="#!").header__menu-item-li Шорты
+                            a(href="#!").header__menu-item-li Юбки
+                            a(href="#!").header__menu-item-li Платья  
+                            a(href="#!").header__menu-item-li Сарафаны
+                            a(href="#!").header__menu-item-li Трусы
+                            a(href="#!").header__menu-item-li Новорождённым
+                .header__menu-bot
+                    a(href="#!").header__menu-bot-link  Доставка и оплата
+                    a(href="#!").header__menu-bot-link  Партнёрам
+                    a(href="#!").header__menu-bot-link  О компании
+                    a(href="#!").header__menu-bot-location 
+                        img(src="images/location-2.svg", alt="") 
+                        | Магазины
+                    a(href="tel:+88005006113").header__menu-bot-tel 8 800 500-61-13
+
                 
 
 

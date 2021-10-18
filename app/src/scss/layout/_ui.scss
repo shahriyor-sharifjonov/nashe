@@ -25,6 +25,9 @@ input {
 
 a {
     text-decoration: none;
+    &:hover{
+      color:  inherit;
+    }
 }
 
 p {

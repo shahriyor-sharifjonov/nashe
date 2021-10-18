@@ -19,7 +19,6 @@ const introSlider = new Swiper(".intro", {
     })
 })
 
-// Header Menu
 const headerButton: HTMLButtonElement =
   document.querySelector(".header__button");
 const headerMenu: HTMLUListElement = document.querySelector(".header__menu");
@@ -40,3 +39,7 @@ window.onclick = (e: MouseEvent) => {
   )
     menuToggle();
 };
+
+function addActive(el){
+  el.classList.toggle('active')
+}
