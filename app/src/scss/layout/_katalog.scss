@@ -1,0 +1,25 @@
+.katalog{
+    margin-top: 220px;
+    @include media(1200){
+        margin-top: 120px;
+    }
+    &__title {
+        font-weight: 500;
+        font-size: 40px;
+        color: #4C363B;
+        margin-top: 15px;
+    }
+}
+
+.category {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: #BEAEA2;
+    @include media(576){
+        display: none;
+    }
+    a{
+        color: inherit;
+    }
+}
