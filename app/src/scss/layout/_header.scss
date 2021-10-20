@@ -529,6 +529,8 @@
     }   
 }
 .header_white_mob {
+    background: #fff;
+    border-bottom: 1px solid #F1ECEA;
     display: none;
     @include media(1200){
         display: flex;

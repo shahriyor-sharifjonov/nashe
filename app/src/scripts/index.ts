@@ -43,3 +43,10 @@ window.onclick = (e: MouseEvent) => {
 function addActive(el){
   el.classList.toggle('active')
 }
+
+var swiper = new Swiper(".products__item-slider", {
+  navigation: {
+    nextEl: ".products__item-slider-button-right",
+    prevEl: ".products__item-slider-button-left",
+  },
+});
