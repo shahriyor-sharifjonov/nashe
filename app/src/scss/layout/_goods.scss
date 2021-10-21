@@ -296,4 +296,76 @@
             }    
         }
     }
+    &__accordion{
+        margin-bottom: 80px;
+        .accordion-item{
+            border-radius: 0;
+            border: none;
+            border-top: 1px solid #EEEAE6;
+            border-bottom: 1px solid #EEEAE6;
+            margin-top: -1px;
+            &__header{
+                margin-bottom: 0;
+                button{
+                    background: transparent;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 1;
+                    color: #4C363B;
+                    padding-left: 0;
+                    padding-right: 0;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    &:focus{
+                        box-shadow: none;
+                    }
+                    &::after{
+                        background-image: url("../images/acc.svg");
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-top: 8px;
+                    }
+                    &:not(.collapsed){
+                        box-shadow: none;
+                        background: transparent;
+                        font-weight: 500;
+                        font-size: 20px;
+                        line-height: 16px;
+                        color: #BA6C55;
+                        margin-top: 0px;
+                        &::after{
+                            background-image: url("../images/acc-active.svg");
+                        }
+                    }
+                }
+            }
+        }
+        .accordion-body{
+            padding-left: 0;
+            padding-right: 0;
+            p{
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 1;
+                letter-spacing: 0.02em;
+                color: #4B363B;
+                position: relative;
+                &.loc{
+                    padding-left: 20px;
+                }
+                &:not(:last-child){
+                    margin-bottom: 15px;
+                }
+                img{
+                    margin-right: 15px;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    padding-top: 4px;
+                }
+            }
+        }
+    }
 }
