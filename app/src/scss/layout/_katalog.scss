@@ -1,9 +1,15 @@
 .katalog{
-    margin-top: 220px;
+    margin-top: 30px;
     max-width: 100%;
     width: 100%;
     @include media(1200){
-        margin-top: 120px;
+        margin-top: 18px;
+    }
+    &.fixed {
+        margin-top: 30px;
+        @include media(1200){
+            margin-top: 18px;
+        }
     }
     &__title {
         font-weight: 500;

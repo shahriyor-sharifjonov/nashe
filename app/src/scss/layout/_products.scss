@@ -418,6 +418,9 @@
     &__li {
         position: relative;
         padding-left: 50px;
+        @include media(576){
+            padding-left: 30px;   
+        }
         &:not(:last-child){
             margin-bottom: 10px;
         }
@@ -426,8 +429,7 @@
             position: absolute;
             background: #BA6C55; 
             left: 0;
-            top: 50%;
-            transform: translateY(-50%);
+            top: 10px;
             width: 6px;
             height: 6px;
             border-radius: 50%;
