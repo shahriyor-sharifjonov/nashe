@@ -317,6 +317,11 @@
         }
 
         &-item {
+            width: calc(50% - 10px);
+
+            img {
+                max-width: 100%;
+            }
 
             &-name {
                 margin-bottom: 15px;
