@@ -36,7 +36,9 @@ html(lang="en")
                                         img(src="images/goods-3.png", alt="") 
                                     .goods__slider-thumb-item.swiper-slide 
                                         img(src="images/goods-4.png", alt="") 
-                            .goods__slider-main.swiper 
+                            .goods__slider-main.swiper(style="--swiper-navigation-color: #4B363B; --swiper-pagination-color: #4B363B") 
+                                button(type="button").goods__slider-main-heart 
+                                    img(src="images/heart-3.svg", alt="") 
                                 .goods__slider-main-wrap.swiper-wrapper 
                                     .goods__slider-main-item.swiper-slide 
                                         img(src="images/goods-1.png", alt="") 
@@ -46,7 +48,88 @@ html(lang="en")
                                         img(src="images/goods-3.png", alt="") 
                                     .goods__slider-main-item.swiper-slide 
                                         img(src="images/goods-4.png", alt="") 
-                    .goods__sidebar 
+                                .swiper-button-next.goods__slider-next
+                                .swiper-button-prev.goods__slider-prev
+                        .goods__sidebar.mobile
+                            .goods__sidebar-row 
+                                p.goods__sidebar-id Арт: 322с3
+                                p.goods__sidebar-q.green в наличии
+                            .goods__sidebar-prices 
+                                p.goods__sidebar-price 11 999 руб.
+                                p.goods__sidebar-price_gray 13 800 руб.
+                                p.goods__sidebar-price_per -25%
+                            .goods__sidebar-stars 
+                                img(src="images/star.svg", alt="")
+                                img(src="images/star.svg", alt="")
+                                img(src="images/star.svg", alt="")
+                                img(src="images/star.svg", alt="")
+                                img(src="images/star-gray.svg", alt="")
+                            .goods__sidebar-item
+                                span Состав:
+                                p Хлопок 92%, эластан 8%
+                            .goods__sidebar-item
+                                span Принт:
+                                p Горошек
+                            .goods__sidebar-item.bor  
+                                span Цвет:
+                                button(type="button").goods__sidebar-item-color(style="background: #F1E4E5; border: 1px solid #BA6C55;")
+                                button(type="button").goods__sidebar-item-color(style="background: #F4E5D9; border: 1px solid rgba(75, 54, 59, 0.1);")
+                            .goods__sidebar-drop.dropdown 
+                                button(type="button" data-bs-toggle="dropdown" aria-expanded="false").goods__sidebar.dropdown-toggle#dropdownMenuButton1
+                                    div
+                                        span Размер:
+                                        | 42 / XS
+                                ul(aria-labelledby="dropdownMenuButton1").dropdown-menu
+                                    li 
+                                        a(href="#!").dropdown-item 42 / XS
+                                    li 
+                                        a(href="#!").dropdown-item 58 / XS
+                                    li 
+                                        a(href="#!").dropdown-item 72 / XS
+                            a(href="#!").goods__sidebar-link Таблица размеров
+                            .goods__sidebar-btns 
+                                button(type="button" anim='ripple').goods__sidebar-btn.active В корзину  
+                                a(href="#!").goods__sidebar-btn Купить сейчас
+                    .goods__sidebar.desctop 
+                        .goods__sidebar-row 
+                            p.goods__sidebar-id Арт: 322с3
+                            p.goods__sidebar-q.green в наличии
+                        .goods__sidebar-prices 
+                            p.goods__sidebar-price 11 999 руб.
+                            p.goods__sidebar-price_gray 13 800 руб.
+                            p.goods__sidebar-price_per -25%
+                        .goods__sidebar-stars 
+                            img(src="images/star.svg", alt="")
+                            img(src="images/star.svg", alt="")
+                            img(src="images/star.svg", alt="")
+                            img(src="images/star.svg", alt="")
+                            img(src="images/star-gray.svg", alt="")
+                        .goods__sidebar-item
+                            span Состав:
+                            p Хлопок 92%, эластан 8%
+                        .goods__sidebar-item
+                            span Принт:
+                            p Горошек
+                        .goods__sidebar-item.bor  
+                            span Цвет:
+                            button(type="button").goods__sidebar-item-color(style="background: #F1E4E5; border: 1px solid #BA6C55;")
+                            button(type="button").goods__sidebar-item-color(style="background: #F4E5D9; border: 1px solid rgba(75, 54, 59, 0.1);")
+                        .goods__sidebar-drop.dropdown 
+                            button(type="button" data-bs-toggle="dropdown" aria-expanded="false").goods__sidebar.dropdown-toggle#dropdownMenuButton1
+                                div
+                                    span Размер:
+                                    | 42 / XS
+                            ul(aria-labelledby="dropdownMenuButton1").dropdown-menu
+                                li 
+                                    a(href="#!").dropdown-item 42 / XS
+                                li 
+                                    a(href="#!").dropdown-item 58 / XS
+                                li 
+                                    a(href="#!").dropdown-item 72 / XS
+                        a(href="#!").goods__sidebar-link Таблица размеров
+                        .goods__sidebar-btns 
+                            button(type="button" anim='ripple').goods__sidebar-btn.active В корзину  
+                            a(href="#!").goods__sidebar-btn Купить сейчас
         script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js") 
         script(src="https://unpkg.com/swiper@7/swiper-bundle.min.js") 
         script(src="scripts/index.js") 

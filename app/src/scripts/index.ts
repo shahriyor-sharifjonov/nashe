@@ -14,23 +14,22 @@ const introSlider = new Swiper(".intro", {
   el.addEventListener("click", (e) => {
     e = e.touches ? e.touches[0] : e;
     const r = el.getBoundingClientRect(),
-      d = Math.sqrt(Math.pow(r.width, 2) + Math.pow(r.height, 2)) * 2;
+        d = Math.sqrt(Math.pow(r.width, 2) + Math.pow(r.height, 2)) * 2;
     el.style.cssText = `--s: 0; --o: 1;`;
     el.offsetTop;
     el.style.cssText = `--t: 1; --o: 0; --d: ${d}; --x:${
-      e.clientX - r.left
+        e.clientX - r.left
     }; --y:${e.clientY - r.top};`;
   });
 });
 
-const headerButton: HTMLButtonElement =
-  document.querySelector(".header__button");
+const headerButton: HTMLButtonElement = document.querySelector(".header__button");
 const headerMenu: HTMLUListElement = document.querySelector(".header__menu");
 let menuOpened = false;
 const menuToggle = () => {
-  menuOpened = !menuOpened;
-  headerButton.classList.toggle("open");
-  headerMenu.classList.toggle("open");
+    menuOpened = !menuOpened;
+    headerButton.classList.toggle("open");
+    headerMenu.classList.toggle("open");
 };
 
 headerButton.onclick = menuToggle;
@@ -45,31 +44,30 @@ window.onclick = (e: MouseEvent) => {
 };
 
 function addActive(el) {
-  el.classList.toggle("active");
+    el.classList.toggle("active");
 }
 
 var swiper = new Swiper(".products__item-slider", {
-  navigation: {
-    nextEl: ".products__item-slider-button-right",
-    prevEl: ".products__item-slider-button-left",
-  },
+    navigation: {
+        nextEl: ".products__item-slider-button-right",
+        prevEl: ".products__item-slider-button-left",
+    },
 });
 
 var swipert = new Swiper(".goods__slider-thumb", {
-    // spaceBetween: 20,
     slidesPerView: 4,
     freeMode: true,
     watchSlidesProgress: true,
     direction: "vertical",
   });
   var swiper3 = new Swiper(".goods__slider-main", {
-    // spaceBetween: 10,
-    // navigation: {
-    //   nextEl: ".swiper-button-next",
-    //   prevEl: ".swiper-button-prev",
-    // },
-    thumbs: {
-      swiper: swipert,
+    spaceBetween: 10,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
     },
+    thumbs: {
+        swiper: swipert,
+    }
 });
 
