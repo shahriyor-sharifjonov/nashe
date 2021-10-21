@@ -347,16 +347,26 @@
     border-top: 1px solid #EEEAE6;
     border-bottom: 1px solid #EEEAE6;
     margin-bottom: 100px;
+    @include media(576){
+        margin-bottom: 70px;   
+    }
     &-content {
         display: flex;
         align-items: center;
         justify-content: flex-start;
+        @include media(768){
+            width: 100%;
+            justify-content: space-between;   
+        }
     }
     &-nums {
         display: flex;
         align-items: center;
         justify-content: center;
         padding: 0 80px;
+        @include media(768){
+            padding: 0 10px; 
+        }
     }
     &-num {
         font-size: 16px;
@@ -365,6 +375,9 @@
         text-align: center;
         &:not(:last-child){
             margin-right: 30px;
+            @include media(576){
+                margin-right: 20px;   
+            }
         }
         &.active {
             color: #BA6C55
@@ -375,6 +388,9 @@
         line-height: 16px;
         text-align: right;
         color: #D0C5BC;
+        @include media(768){
+            display: none;   
+        }
     }
 }
 
@@ -384,7 +400,7 @@
     &__title {
         font-weight: 500;
         font-size: 30px;
-        line-height: 16px;
+        line-height: 1;
         color: #4C363B;
         margin-bottom: 10px;
     }
