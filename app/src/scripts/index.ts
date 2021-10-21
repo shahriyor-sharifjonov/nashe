@@ -55,4 +55,21 @@ var swiper = new Swiper(".products__item-slider", {
   },
 });
 
+var swipert = new Swiper(".goods__slider-thumb", {
+    // spaceBetween: 20,
+    slidesPerView: 4,
+    freeMode: true,
+    watchSlidesProgress: true,
+    direction: "vertical",
+  });
+  var swiper3 = new Swiper(".goods__slider-main", {
+    // spaceBetween: 10,
+    // navigation: {
+    //   nextEl: ".swiper-button-next",
+    //   prevEl: ".swiper-button-prev",
+    // },
+    thumbs: {
+      swiper: swipert,
+    },
+});
 

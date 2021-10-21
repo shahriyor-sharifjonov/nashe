@@ -225,10 +225,13 @@
     font-size: 14px;
     line-height: 16px;
     color: #BEAEA2;
-    @include media(576){
+    @include media(768){
         display: none;
     }
     a{
         color: inherit;
+    }
+    span {
+        margin: 0 5px;
     }
 }
