@@ -52,6 +52,10 @@
             top: 20px;
             right: 20px;
             z-index: 2;
+            @include media(576){
+                top: 15px;
+                right: 15px;
+            }
         }
         &-aksiya {
             position: absolute;
@@ -66,6 +70,12 @@
             text-align: center;
             color: #FFFFFF;
             z-index: 2;
+            @include media(576){
+                bottom: 5px;
+                left: 5px;
+                font-size: 11px;   
+                padding: 6px 15px;
+            }
         }
         &-last {
             position: absolute;
@@ -80,6 +90,13 @@
             text-align: center;
             color: #FFFFFF;
             z-index: 2;
+            @include media(576){
+                bottom: 5px;
+                left: 5px;
+                line-height: 120%;   
+                padding: 6px 15px;
+                display: none;
+            }
         }
         .swiper-slide {
             max-width: 100%;
@@ -111,6 +128,12 @@
             align-items: center;
             margin-top: 25px;
             margin-bottom: 5px;
+            @include media(768){
+                flex-wrap: wrap;   
+            }
+            @include media(576){
+                margin-bottom: 7px;   
+            }
         }
         &-price {
             font-weight: 500;
@@ -120,6 +143,11 @@
             letter-spacing: 0.02em;
             color: #4B363B;     
             z-index: 2;
+            @include media(576){
+                font-size: 15px;
+                line-height: 120%;   
+                margin-right: 7px;
+            }
             &_gray{
                 font-size: 16px;
                 line-height: 120%;
@@ -127,7 +155,13 @@
                 letter-spacing: 0.02em;
                 text-decoration-line: line-through;
                 color: #BEAEA2;          
-                z-index: 2;      
+                z-index: 2;
+                @include media(576){
+                    font-size: 11px;
+                    line-height: 120%;
+                    margin-right: 0;
+                    margin-left: auto;
+                }      
             }       
             &_per{
                 font-size: 16px;
@@ -139,6 +173,17 @@
                 letter-spacing: 0.02em;
                 color: #BA6C55;
                 z-index: 2;
+                @include media(576){
+                    padding: 4px 8px 4px 5px;
+                    font-size: 11px;
+                    line-height: 120%;
+                    letter-spacing: 0.02em;
+                    color: #BA6C55;                       
+                }
+                @include media(460){
+                    margin-right: auto;
+                    margin-top: 10px;
+                }
             }
         }
         &-title {
@@ -147,9 +192,13 @@
             letter-spacing: 0.02em;
             color: #4B363B;
             z-index: 2;
+            @include media(576){
+                font-size: 13px;
+                line-height: 120%;   
+            }
         }
         &-hidden{
-            display: flex;
+            display: none;
             flex-direction: column;
             align-items: stretch;
             justify-content: flex-start;
@@ -164,6 +213,9 @@
             bottom: -216px;
             background: #fff;
             height: 216px;
+            @media (hover:hover){
+                display: flex;
+            }
         }
         &-desc {
             font-size: 14px;
