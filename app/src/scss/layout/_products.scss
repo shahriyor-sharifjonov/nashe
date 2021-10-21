@@ -156,5 +156,38 @@
             color: #4B363B;
             margin-top: 6px;
         }
+        &-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        &-stars {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            img{
+                &:not(:last-child){
+                    margin-right: 4px;
+                }
+            }
+        }
+        &-q {
+            font-size: 14px;
+            line-height: 120%;
+            text-align: right;
+            letter-spacing: 0.02em;
+            &.green {
+                color: #67BAA1;    
+            }
+        }
+        &-filter{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            width: 100%;
+        }
     }
 }
